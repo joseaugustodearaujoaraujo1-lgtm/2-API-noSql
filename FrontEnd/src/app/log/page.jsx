@@ -24,6 +24,8 @@ export default function Login() {
         e.preventDefault()
         console.log(email.current.value)
         console.log(senha.current.value)
+        console.log(email.current.value)
+        console.log(senha.current.value)
         
     }
 
