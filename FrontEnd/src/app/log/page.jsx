@@ -21,14 +21,14 @@ export default function Login() {
     }
     //teste12345
 
-    function EnviarDados(e){
-        e.preventDefault()
+    function EnviarDados(e) {
+        
         console.log(email.current.value)
         console.log(senha.current.value)
-        
+
     }
 
-    
+
 
     useEffect(() => {
         if (fundo === "Escuro") {
@@ -36,7 +36,7 @@ export default function Login() {
         } else {
             document.body.className = "Claro"
         }
-    })
+    }, [fundo])
 
     return (
         <div className={fundo}>
@@ -47,7 +47,7 @@ export default function Login() {
             </nav>
             <header className="MsgLogin">
                 <h1 className="BemVindo">Bem-Vindo</h1>
-                <p className="EntreNaSuaConta">Entre na sua conta para continuar</p>
+                <p className="EntreNaSuaConta">Entre n para continuar</p>
             </header>
 
             <section>
