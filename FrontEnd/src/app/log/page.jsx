@@ -1,6 +1,7 @@
 "use client"
 import "./style.css"
 import { useState, useEffect, useRef } from 'react'
+import api from "../api/connect.js"
 
 export default function Login() {
 
@@ -24,10 +25,10 @@ export default function Login() {
         e.preventDefault()
         console.log(email.current.value)
         console.log(senha.current.value)
-        console.log(email.current.value)
-        console.log(senha.current.value)
         
     }
+
+    
 
     useEffect(() => {
         if (fundo === "Escuro") {
