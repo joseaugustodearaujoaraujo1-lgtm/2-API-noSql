@@ -47,7 +47,7 @@ export default function Login() {
             </nav>
             <header className="MsgLogin">
                 <h1 className="BemVindo">Bem-Vindo</h1>
-                <p className="EntreNaSuaConta">Entre n para continuar</p>
+                <p className="EntreNaSuaConta">Insira seus dados para continuar para continuar</p>
             </header>
 
             <section>
@@ -60,12 +60,11 @@ export default function Login() {
                     <br />
                     <input ref={senha} className="Input" type="password" id="senha" placeholder='Senha...' required />
                     <br />
-                    <a className="EsqueceuSenha" href="#">Esqueceu a senha?</a>
-                    <br />
                     <button className="Button" type="submit">Entrar</button>
-                    <div className="ContainerCadastro">
-                        <p className="NaoTemConta">Não tem conta?</p>
-                        <a className="CriarConta" href="#">Criar conta</a>
+                    <br />
+                    <div className="Ver-banco">
+                    <p>Ver informaçãoes no banco ? </p>
+                    <a href="/banco"> Clique aqui</a>
                     </div>
                 </form>
             </section>

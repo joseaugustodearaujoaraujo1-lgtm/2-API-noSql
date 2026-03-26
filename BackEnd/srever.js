@@ -8,7 +8,7 @@ const data = new Date()
 
 app.use(express.json())
 
-app.post("/cadastros", async (req, res) => {
+app.post("/v1/cadastros", async (req, res) => {
     try {
         const criar = await prisma.user.create({
             data: {
@@ -23,7 +23,7 @@ app.post("/cadastros", async (req, res) => {
     }
 })
 
-app.get("/users", async (req, res) => {
+app.get("/v1/users", async (req, res) => {
     try {
         let buscarDados
 
@@ -42,7 +42,7 @@ app.get("/users", async (req, res) => {
     }
 })
 
-app.patch("/users/:email", async (req, res) => {
+app.patch("/v1/users/:email", async (req, res) => {
     try {
         const atualizar = await prisma.user.update({
             where: {
@@ -60,7 +60,7 @@ app.patch("/users/:email", async (req, res) => {
     }
 })
 
-app.delete("/users/:email", async (req, res) => {
+app.delete("/v1/users/:email", async (req, res) => {
     try {
         const deletar = await prisma.user.delete({
             where: {
