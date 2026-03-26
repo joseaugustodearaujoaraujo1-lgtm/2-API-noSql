@@ -22,7 +22,7 @@ export default function Login() {
     //teste12345
 
     function EnviarDados(e) {
-        
+        e.preventDefault()
         console.log(email.current.value)
         console.log(senha.current.value)
 
